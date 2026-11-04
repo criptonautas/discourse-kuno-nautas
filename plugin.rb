@@ -4,7 +4,7 @@
 # about: Monero fundraisers published as topics, with a progress bar fed by a watch-only wallet
 # version: 0.1.0
 # authors: Criptonautas
-# url: https://github.com/somos-criptonautas/discourse-kuno-nautas
+# url: https://github.com/criptonautas/discourse-kuno-nautas
 # required_version: 3.4.0
 
 enabled_site_setting :kuno_nautas_enabled

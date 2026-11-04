@@ -1,5 +1,5 @@
 {
   "tests": {
-    "requiredPlugins": ["https://github.com/somos-criptonautas/discourse-monero-tips"]
+    "requiredPlugins": ["https://github.com/criptonautas/discourse-monero-tips"]
   }
 }

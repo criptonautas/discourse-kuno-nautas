@@ -1,6 +1,6 @@
 # discourse-kuno-nautas
 
-[![Linting and Tests](https://github.com/somos-criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml/badge.svg)](https://github.com/somos-criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml)
+[![Linting and Tests](https://github.com/criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml/badge.svg)](https://github.com/criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml)
 
 **ENGLISH** | [ESPAÑOL](README.es.md)
 
@@ -12,7 +12,7 @@ The forum never holds funds. It holds a **view** key per campaign, which cannot 
 
 ## Needs
 
-[discourse-monero-tips](https://github.com/somos-criptonautas/discourse-monero-tips) with verified tips configured: this plugin reuses its `monero-wallet-rpc`, its lock, its address formats and its `monero_tips_*` settings (`restore_height`, `min_confirmations`, `min_amount`). Tips themselves are not touched: a campaign is a second, separate watch-only wallet keyed by topic, never by user.
+[discourse-monero-tips](https://github.com/criptonautas/discourse-monero-tips) with verified tips configured: this plugin reuses its `monero-wallet-rpc`, its lock, its address formats and its `monero_tips_*` settings (`restore_height`, `min_confirmations`, `min_amount`). Tips themselves are not touched: a campaign is a second, separate watch-only wallet keyed by topic, never by user.
 
 ## How it works
 
@@ -44,8 +44,8 @@ hooks:
     - exec:
         cd: $home/plugins
         cmd:
-          - git clone https://github.com/somos-criptonautas/discourse-monero-tips.git
-          - git clone https://github.com/somos-criptonautas/discourse-kuno-nautas.git
+          - git clone https://github.com/criptonautas/discourse-monero-tips.git
+          - git clone https://github.com/criptonautas/discourse-kuno-nautas.git
 ```
 
 Then enable `kuno_nautas_enabled` and pick `kuno_nautas_categories`.
@@ -80,7 +80,7 @@ The restore height of a new wallet is taken from the chain height, read through 
 
 ## Banner
 
-[discourse-kuno-banner](https://github.com/somos-criptonautas/discourse-kuno-banner) reads `monero_campaign` from topic list items and draws the bar on campaign topics in its daily rotation, next to the external Kunos it supports.
+[discourse-kuno-banner](https://github.com/criptonautas/discourse-kuno-banner) reads `monero_campaign` from topic list items and draws the bar on campaign topics in its daily rotation, next to the external Kunos it supports.
 
 ## Development
 

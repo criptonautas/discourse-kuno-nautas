@@ -1,6 +1,6 @@
 # discourse-kuno-nautas
 
-[![Linting and Tests](https://github.com/somos-criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml/badge.svg)](https://github.com/somos-criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml)
+[![Linting and Tests](https://github.com/criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml/badge.svg)](https://github.com/criptonautas/discourse-kuno-nautas/actions/workflows/plugin-linting-and-tests.yml)
 
 [ENGLISH](README.md) | **ESPAÑOL**
 
@@ -12,7 +12,7 @@ El foro nunca guarda fondos. Guarda una clave de **vista** por campaña, que no 
 
 ## Necesita
 
-[discourse-monero-tips](https://github.com/somos-criptonautas/discourse-monero-tips) con las propinas verificadas configuradas: este plugin reutiliza su `monero-wallet-rpc`, su lock, sus formatos de dirección y sus ajustes `monero_tips_*` (`restore_height`, `min_confirmations`, `min_amount`). Las propinas no se tocan: una campaña es un segundo monedero de solo lectura, aparte, atado al tema y nunca al usuario.
+[discourse-monero-tips](https://github.com/criptonautas/discourse-monero-tips) con las propinas verificadas configuradas: este plugin reutiliza su `monero-wallet-rpc`, su lock, sus formatos de dirección y sus ajustes `monero_tips_*` (`restore_height`, `min_confirmations`, `min_amount`). Las propinas no se tocan: una campaña es un segundo monedero de solo lectura, aparte, atado al tema y nunca al usuario.
 
 ## Cómo funciona
 
@@ -44,8 +44,8 @@ hooks:
     - exec:
         cd: $home/plugins
         cmd:
-          - git clone https://github.com/somos-criptonautas/discourse-monero-tips.git
-          - git clone https://github.com/somos-criptonautas/discourse-kuno-nautas.git
+          - git clone https://github.com/criptonautas/discourse-monero-tips.git
+          - git clone https://github.com/criptonautas/discourse-kuno-nautas.git
 ```
 
 Después activá `kuno_nautas_enabled` y elegí `kuno_nautas_categories`.
@@ -80,7 +80,7 @@ La altura de restauración de un monedero nuevo sale de la altura de la cadena, 
 
 ## Banner
 
-[discourse-kuno-banner](https://github.com/somos-criptonautas/discourse-kuno-banner) lee `monero_campaign` de los temas de la lista y dibuja la barra en los temas con campaña dentro de su rotación diaria, junto a los Kunos externos que apoya.
+[discourse-kuno-banner](https://github.com/criptonautas/discourse-kuno-banner) lee `monero_campaign` de los temas de la lista y dibuja la barra en los temas con campaña dentro de su rotación diaria, junto a los Kunos externos que apoya.
 
 ## Desarrollo
 
