@@ -32,6 +32,6 @@ end
 #
 # Indexes
 #
-#  index_monero_campaign_donations_on_donor_id                    (donor_id)
-#  index_monero_campaign_donations_on_topic_id_and_txid_and_address  (topic_id,txid,address) UNIQUE
+#  index_monero_campaign_donations_on_donor_id            (donor_id)
+#  index_monero_campaign_donations_on_topic_txid_address  (topic_id,txid,address) UNIQUE
 #

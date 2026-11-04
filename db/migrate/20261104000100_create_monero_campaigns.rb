@@ -16,7 +16,11 @@ class CreateMoneroCampaigns < ActiveRecord::Migration[7.2]
       t.timestamps
     end
 
-    add_index :monero_campaign_donations, %i[topic_id txid address], unique: true
+    # Named: the generated name would pass Postgres's 63-character limit and be hashed.
+    add_index :monero_campaign_donations,
+              %i[topic_id txid address],
+              unique: true,
+              name: "index_monero_campaign_donations_on_topic_txid_address"
     add_index :monero_campaign_donations, :donor_id
 
     create_table :monero_campaign_addresses do |t|
