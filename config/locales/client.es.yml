@@ -1,0 +1,51 @@
+es:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          kuno_nautas: "Kuno Nautas"
+  js:
+    kuno_nautas:
+      title: "Recaudación en Monero"
+      of_goal: "de"
+      progress_label: "Progreso de la recaudación"
+      source_community: "Confirmado en la blockchain · comunidad"
+      source_linked: "Confirmado en la blockchain · Kuno + comunidad"
+      closed: "cerrada"
+      supporters: "Colaboradores"
+      donate: "Donar"
+      also_on_kuno: "También en Kuno"
+      set_up: "Campaña"
+      close: "Cerrar campaña"
+      close_confirm: "¿Cerrar esta campaña? La clave de vista se olvida, el monedero deja de mirarse y la barra queda congelada en su total. No se puede deshacer."
+      wallet:
+        pending: "Preparando el monedero de solo lectura…"
+        ready: "Mirando el monedero. Las donaciones aparecen acá cuando se confirman."
+        error: "Algo salió mal: %{error}"
+        error_generic: "Algo salió mal con el monedero. Un admin puede ver por qué."
+      donate_title: "Donar en Monero"
+      donate_intro: "La donación va directo al monedero de la campaña; el foro nunca la toca. Aparece en la barra cuando se confirma en la blockchain."
+      show_me: "Mostrarme como colaborador"
+      attributed: "Esta dirección se creó solo para vos, así que la donación queda a tu nombre."
+      unattributed: "Nada une esta donación a tu cuenta; suma al total de forma anónima."
+      address: "Dirección de Monero"
+      copy: "Copiar dirección"
+      copied: "Copiada"
+      open_wallet: "Abrir en el monedero"
+      scan: "Escanealo con tu monedero"
+      form:
+        title: "Armar la campaña"
+        goal: "Meta en XMR"
+        goal_hint: "Dejala vacía si no hay meta: el total se muestra igual, sin barra."
+        kuno_url: "Enlace a la recaudación en Kuno (opcional)"
+        kuno_url_hint: "Si esta campaña también está en Kuno, pegá su enlace https. Allá tiene que usarse el mismo monedero; las donaciones se cuentan una sola vez."
+        address: "Dirección primaria del monedero"
+        address_hint: "95 caracteres que empiezan con 4. Tiene que ser un monedero apartado para esta campaña, no el de tus propinas."
+        start_date: "Fecha de inicio de la campaña"
+        start_date_hint: "Se cuentan las donaciones desde ese día; un día antes no hace daño."
+        warning_dedicated: "Usá un monedero dedicado y no gastes desde él mientras la barra esté activa: una clave de vista revela todo el historial de entradas del monedero, pasado y futuro, y tu propio vuelto contaría como donación (en Kuno también)."
+        warning_confirmations: "La barra cuenta las donaciones a las 10 confirmaciones; Kuno a más o menos 1, así que las dos cifras difieren por unos bloques, y la nuestra incluye además lo que Kuno se pierde."
+        warning_kuno_delete: "En Kuno, borrá la recaudación cuando termine: desactivarla deja tu clave allá, en texto plano."
+        warning_view_key: "Quien lea la clave de vista de tu monedero ve cada pago entrante, para siempre. Nunca puede gastar."
+        view_key: "Clave de vista privada"
+        save: "Iniciar la campaña"

@@ -1,0 +1,9 @@
+kuno_nautas:
+  kuno_nautas_enabled:
+    default: false
+    client: true
+  kuno_nautas_categories:
+    default: ""
+    type: category_list
+    client: true
+    description: "Categories where a topic can carry a Monero fundraiser. Who may post there is the category's own permission."

@@ -1,0 +1,15 @@
+en:
+  site_settings:
+    kuno_nautas_enabled: "Let members publish Monero fundraisers as topics, with a progress bar fed by a watch-only wallet. Needs discourse-monero-tips with verified tips configured."
+    kuno_nautas_categories: "Categories where a topic can carry a Monero fundraiser. Who may post there is the category's own permission."
+  kuno_nautas:
+    unavailable: "Campaigns are not available on this forum: no Monero wallet RPC is configured."
+    not_campaign_category: "This topic is not in a campaign category."
+    already_set_up: "This topic already had a campaign. A new one needs a new topic."
+    key_unreadable: "The stored view key cannot be read any more (the site secret changed). Close the campaign; a new one needs a new topic."
+    invalid_address: "That does not look like a primary Monero address: 95 characters starting with 4. Kuno accepts only this kind."
+    same_as_tips_address: "Use a dedicated wallet: this is the address your tips go to, so tips would count as donations."
+    invalid_view_key: "A private view key is 64 hexadecimal characters."
+    invalid_kuno_url: "The Kuno link must start with https://"
+    invalid_goal: "The goal must be a number of XMR, or empty for no goal."
+    invalid_start_date: "The start date must be a date like 2026-11-04."

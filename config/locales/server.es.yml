@@ -1,0 +1,15 @@
+es:
+  site_settings:
+    kuno_nautas_enabled: "Permite a los miembros publicar recaudaciones en Monero como temas, con una barra de progreso alimentada por un monedero de solo lectura. Necesita discourse-monero-tips con las propinas verificadas configuradas."
+    kuno_nautas_categories: "Categorías donde un tema puede llevar una recaudación en Monero. Quién puede publicar ahí lo decide el permiso de la categoría."
+  kuno_nautas:
+    unavailable: "Las campañas no están disponibles en este foro: no hay un RPC de monedero de Monero configurado."
+    not_campaign_category: "Este tema no está en una categoría de campañas."
+    already_set_up: "Este tema ya tuvo una campaña. Una nueva necesita un tema nuevo."
+    key_unreadable: "La clave de vista guardada ya no se puede leer (cambió el secreto del sitio). Cerrá la campaña; una nueva necesita un tema nuevo."
+    invalid_address: "Eso no parece una dirección primaria de Monero: 95 caracteres que empiezan con 4. Kuno solo acepta de estas."
+    same_as_tips_address: "Usá un monedero dedicado: esta es la dirección a la que llegan tus propinas, y contarían como donaciones."
+    invalid_view_key: "Una clave de vista privada tiene 64 caracteres hexadecimales."
+    invalid_kuno_url: "El enlace de Kuno tiene que empezar con https://"
+    invalid_goal: "La meta tiene que ser una cantidad de XMR, o vacía si no hay meta."
+    invalid_start_date: "La fecha de inicio tiene que ser una fecha como 2026-11-04."

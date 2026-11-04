@@ -1,0 +1,168 @@
+// Bar in the shape of discourse-community-support-nautas' support bar, which a
+// plugin cannot depend on: Discourse variables only, so every palette applies.
+.kuno-campaign {
+  margin: 1em 0 0.5em;
+  padding: 0.9rem 1rem 0.85rem;
+  border: 1px solid var(--primary-low);
+  border-radius: var(--d-border-radius-large, 0.9rem);
+  background: var(--primary-very-low);
+
+  &--setup {
+    background: none;
+    border-style: dashed;
+  }
+
+  // Raised total, what it is measured against and the percentage all sit on
+  // one line, so the figures are read together instead of at opposite edges.
+  &__summary {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.45rem;
+  }
+
+  &__figures {
+    display: flex;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem;
+
+    strong {
+      color: var(--primary);
+      font-size: var(--font-up-1);
+      font-variant-numeric: tabular-nums;
+    }
+
+    > span {
+      color: var(--primary-medium);
+      font-size: var(--font-down-1);
+    }
+  }
+
+  &__percentage {
+    flex: 0 0 auto;
+    color: var(--tertiary);
+    font-size: var(--font-up-1);
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__track {
+    position: relative;
+    width: 100%;
+    height: 0.55rem;
+    overflow: hidden;
+    border-radius: 999px;
+    background: var(--tertiary-low);
+
+    &.--reached {
+      background: var(--success-low);
+    }
+  }
+
+  &__fill {
+    display: block;
+    height: 100%;
+    border-radius: 999px;
+    background: var(--tertiary);
+    transition: width 0.4s ease;
+
+    .--reached & {
+      background: var(--success);
+    }
+  }
+
+  &.--closed &__fill,
+  &.--closed &__percentage {
+    background: var(--primary-medium);
+    color: var(--primary-medium);
+  }
+
+  &__source,
+  &__wallet {
+    margin: 0.45rem 0 0;
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &__supporters {
+    display: flex;
+    align-items: center;
+    margin-top: 0.55rem;
+  }
+
+  &__supporter {
+    display: inline-flex;
+    overflow: hidden;
+    margin-inline-end: -0.45rem;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    background: var(--tertiary-low);
+
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+}
+
+.kuno-donate-modal {
+  &__intro,
+  &__attribution {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &__attribute {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    margin: 0 0 0.75em;
+  }
+
+  &__qr {
+    display: block;
+    margin: 0 auto 1em;
+    background: var(--secondary);
+  }
+
+  &__address {
+    width: 100%;
+    font-family: var(--d-font-family--monospace, monospace);
+    font-size: var(--font-down-1);
+  }
+}
+
+.kuno-campaign-form {
+  input[type="text"],
+  input[type="url"] {
+    width: 100%;
+  }
+
+  &__mono {
+    font-family: var(--d-font-family--monospace, monospace);
+  }
+
+  &__hint {
+    margin: 0.25em 0 0;
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+
+  &__warnings {
+    max-width: 40em;
+
+    ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+en:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          kuno_nautas: "Kuno Nautas"
+  js:
+    kuno_nautas:
+      title: "Monero fundraiser"
+      of_goal: "of"
+      progress_label: "Fundraiser progress"
+      source_community: "Confirmed on the blockchain · community"
+      source_linked: "Confirmed on the blockchain · Kuno + community"
+      closed: "closed"
+      supporters: "Supporters"
+      donate: "Donate"
+      also_on_kuno: "Also on Kuno"
+      set_up: "Campaign"
+      close: "Close campaign"
+      close_confirm: "Close this campaign? The view key is forgotten, the wallet stops being watched and the bar freezes at its total. This cannot be undone."
+      wallet:
+        pending: "Setting up the watch-only wallet…"
+        ready: "Watching the wallet. Donations show here once confirmed."
+        error: "Something went wrong: %{error}"
+        error_generic: "Something went wrong with the wallet. An admin can see why."
+      donate_title: "Donate in Monero"
+      donate_intro: "The donation goes straight to the campaign's wallet; the forum never holds it. It shows on the bar once confirmed on the blockchain."
+      show_me: "Show me as a supporter"
+      attributed: "This address was made for you alone, so the donation is credited to you."
+      unattributed: "Nothing ties this donation to your account; it counts towards the total anonymously."
+      address: "Monero address"
+      copy: "Copy address"
+      copied: "Copied"
+      open_wallet: "Open in wallet"
+      scan: "Scan with your wallet"
+      form:
+        title: "Set up the campaign"
+        goal: "Goal in XMR"
+        goal_hint: "Leave empty for no goal: the total still shows, without a bar."
+        kuno_url: "Kuno fundraiser link (optional)"
+        kuno_url_hint: "If this campaign also lives on Kuno, paste its https link. The same wallet must be used there; donations are counted once."
+        address: "Wallet primary address"
+        address_hint: "95 characters starting with 4. It must be a wallet set aside for this campaign, not the one your tips go to."
+        start_date: "Campaign start date"
+        start_date_hint: "Donations from this day on are counted; a day earlier does no harm."
+        warning_dedicated: "Use a dedicated wallet and do not spend from it while the bar is live: a view key reveals the wallet's whole incoming history, past and future, and your own change coming back would count as a donation (on Kuno too)."
+        warning_confirmations: "The bar counts donations after 10 confirmations; Kuno counts at about 1, so the two figures differ for a few blocks, and ours also includes what Kuno misses."
+        warning_kuno_delete: "On Kuno, delete the fundraiser when it ends: deactivating keeps your key there, in plaintext."
+        warning_view_key: "Whoever reads your wallet's view key sees every incoming payment, forever. It can never spend."
+        view_key: "Private view key"
+        save: "Start the campaign"
