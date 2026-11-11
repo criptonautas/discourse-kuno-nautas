@@ -56,6 +56,7 @@ Después activá `kuno_nautas_enabled` y elegí `kuno_nautas_categories`.
 |---|---|
 | `kuno_nautas_enabled` | Apagado por defecto |
 | `kuno_nautas_categories` | Categorías cuyos temas pueden llevar una campaña |
+| `kuno_nautas_show_anne_button` | Activo por defecto: un botón **Ver en Anne**, a la derecha del todo, que enlaza a la recaudación en Kuno de las campañas enlazadas |
 
 Todo lo del RPC del monedero, confirmaciones, polvo y altura de restauración se configura en discourse-monero-tips.
 

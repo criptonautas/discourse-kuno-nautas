@@ -63,7 +63,11 @@ acceptance("Kuno Nautas | a topic with a campaign", function (needs) {
 
 acceptance("Kuno Nautas | a linked Kuno", function (needs) {
   needs.user();
-  needs.settings({ kuno_nautas_enabled: true, kuno_nautas_categories: "" });
+  needs.settings({
+    kuno_nautas_enabled: true,
+    kuno_nautas_categories: "",
+    kuno_nautas_show_anne_button: true,
+  });
 
   needs.pretender((server, helper) => {
     server.get("/t/280.json", () =>
@@ -95,6 +99,30 @@ acceptance("Kuno Nautas | a linked Kuno", function (needs) {
 });
 
 const CATEGORY_ID = topicFixtures["/t/280/1.json"].category_id;
+
+acceptance("Kuno Nautas | a linked Kuno, button hidden", function (needs) {
+  needs.user();
+  needs.settings({
+    kuno_nautas_enabled: true,
+    kuno_nautas_categories: "",
+    kuno_nautas_show_anne_button: false,
+  });
+
+  needs.pretender((server, helper) => {
+    server.get("/t/280.json", () =>
+      helper.response(
+        topicWith({ ...CAMPAIGN, kuno_url: "https://kuno.anne.media/f/1" })
+      )
+    );
+  });
+
+  test("hides the Anne button but keeps the campaign", async function (assert) {
+    await visit("/t/internationalization-localization/280");
+
+    assert.dom(".kuno-campaign").exists();
+    assert.dom(".kuno-campaign__kuno").doesNotExist();
+  });
+});
 
 acceptance("Kuno Nautas | the owner of a topic without one", function (needs) {
   needs.user({ admin: true });

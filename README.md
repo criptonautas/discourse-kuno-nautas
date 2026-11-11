@@ -56,6 +56,7 @@ Then enable `kuno_nautas_enabled` and pick `kuno_nautas_categories`.
 |---|---|
 | `kuno_nautas_enabled` | Off by default |
 | `kuno_nautas_categories` | Categories whose topics may carry a campaign |
+| `kuno_nautas_show_anne_button` | On by default: a **View on Anne** button, far right, linking to the Kuno fundraiser of linked campaigns |
 
 Everything about the wallet RPC, confirmations, dust and restore height is set in discourse-monero-tips.
 

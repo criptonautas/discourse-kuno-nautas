@@ -2,6 +2,7 @@ es:
   site_settings:
     kuno_nautas_enabled: "Permite a los miembros publicar recaudaciones en Monero como temas, con una barra de progreso alimentada por un monedero de solo lectura. Necesita discourse-monero-tips con las propinas verificadas configuradas."
     kuno_nautas_categories: "Categorías donde un tema puede llevar una recaudación en Monero. Quién puede publicar ahí lo decide el permiso de la categoría."
+    kuno_nautas_show_anne_button: "Muestra un botón que enlaza a la recaudación en Anne (Kuno) en las campañas que tienen enlace a Kuno."
   kuno_nautas:
     unavailable: "Las campañas no están disponibles en este foro: no hay un RPC de monedero de Monero configurado."
     not_campaign_category: "Este tema no está en una categoría de campañas."

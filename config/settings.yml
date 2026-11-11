@@ -7,3 +7,7 @@ kuno_nautas:
     type: category_list
     client: true
     description: "Categories where a topic can carry a Monero fundraiser. Who may post there is the category's own permission."
+  kuno_nautas_show_anne_button:
+    default: true
+    client: true
+    description: "Show a button linking to the fundraiser on Kuno (anne.media) on campaigns that have a Kuno link."

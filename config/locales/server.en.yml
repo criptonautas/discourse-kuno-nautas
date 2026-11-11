@@ -2,6 +2,7 @@ en:
   site_settings:
     kuno_nautas_enabled: "Let members publish Monero fundraisers as topics, with a progress bar fed by a watch-only wallet. Needs discourse-monero-tips with verified tips configured."
     kuno_nautas_categories: "Categories where a topic can carry a Monero fundraiser. Who may post there is the category's own permission."
+    kuno_nautas_show_anne_button: "Show a button linking to the fundraiser on Anne (Kuno) on campaigns that have a Kuno link."
   kuno_nautas:
     unavailable: "Campaigns are not available on this forum: no Monero wallet RPC is configured."
     not_campaign_category: "This topic is not in a campaign category."

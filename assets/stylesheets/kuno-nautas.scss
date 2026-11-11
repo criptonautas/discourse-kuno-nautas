@@ -112,6 +112,11 @@
     gap: 0.5rem;
     margin-top: 0.75rem;
   }
+
+  // Far right on a wide card, so it reads apart from Donate and Close.
+  &__kuno {
+    margin-inline-start: auto;
+  }
 }
 
 .kuno-donate-modal {

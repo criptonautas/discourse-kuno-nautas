@@ -65,6 +65,10 @@ export default class KunoCampaign extends Component {
     return !!this.campaign?.kuno_url;
   }
 
+  get showAnne() {
+    return this.linked && this.siteSettings.kuno_nautas_show_anne_button;
+  }
+
   get progress() {
     return progress(this.campaign);
   }
@@ -226,17 +230,6 @@ export default class KunoCampaign extends Component {
               </button>
             {{/if}}
 
-            {{#if this.linked}}
-              <a
-                class="btn btn-default kuno-campaign__kuno"
-                href={{this.campaign.kuno_url}}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {{i18n "kuno_nautas.also_on_kuno"}}
-              </a>
-            {{/if}}
-
             {{#if (and this.active this.isOwner)}}
               <button
                 type="button"
@@ -246,6 +239,18 @@ export default class KunoCampaign extends Component {
               >
                 {{i18n "kuno_nautas.close"}}
               </button>
+            {{/if}}
+
+            {{! Last, pushed to the far right: a link out, not an action here. }}
+            {{#if this.showAnne}}
+              <a
+                class="btn btn-default kuno-campaign__kuno"
+                href={{this.campaign.kuno_url}}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{i18n "kuno_nautas.view_on_anne"}}
+              </a>
             {{/if}}
           </div>
 
